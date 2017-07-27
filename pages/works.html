@@ -143,8 +143,6 @@
 	</div>
 </body>
 <script>
-$("#form").on('submit', (function (e) {
-                e.preventDefault();
                 $.ajax({
                     url: "https://ftl2015b.ru/portfolio/get_works.php",
                     type: "POST",
@@ -157,7 +155,6 @@ $("#form").on('submit', (function (e) {
                             console.log(data);
                         }
                 });
-            }));	
 
 </script>
 </html>
