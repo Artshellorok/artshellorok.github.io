@@ -1,0 +1,359 @@
+body,html{
+	margin: 0;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+}
+p{
+	margin: 0;
+}
+.aligner{
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.header__logo{
+	float: left;
+	margin-left: 20px;
+	padding-top: 40px;
+}
+.header__logo__logo{
+	font-family: Bebas;
+	font-size: 36px;
+}
+.header__logo__logoDesc{
+	font-family: Arial;
+	font-size: 15px;
+}
+.header__links{
+	float: right;
+}
+.header__links div{
+	background: #ffffff;
+	float: left;
+	margin-right: 35px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 50px;
+}
+.header__links div a{
+	color: #000000;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 17px;
+}
+.header__links div:hover{
+	transition: 2s;
+	background: #d45e5e;
+}
+.header__links div:hover .header__link{
+	transition: 2s;
+	color: #ffffff;
+}
+.quote{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 75px;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.quote__block{
+	width: 55%;
+	text-align: center;
+	margin: 0 auto;
+}
+.quote__text{
+	margin-top: 30px;
+	font-family: "Cambria";
+	font-size: 30px;
+	color: #000000;
+}
+.quote__image{
+	margin-top: 20px;
+	width: 100%;
+}
+.portfolio{
+	
+	
+}
+.portfolio__text{
+	font-size: 23px;
+	font-family: Cambria;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.portfoilio__example{
+	position: relative;
+	background: #a3a3a3;
+	border: solid #c0c0c0 5px;
+	overflow: hidden;
+	width: 280px;
+	height: 390px;
+}
+.portfolio__example__top{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: -300px;
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: #000;
+	font-family: Arial;
+	background: rgba(255,255,255,0.5);
+}
+.portfolio__example__bottom{
+	opacity: 0;
+	position: absolute;
+	bottom: -300px;
+	left: 0;
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: #000;
+	font-family: Arial;
+	background: rgba(255,255,255,0.5);
+}
+.portfolio__link{
+	display: block;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	height: 390px;
+	width: 280px;
+}
+.portfolio__link:hover .portfolio__example__bottom{
+	animation: dropup 0.5s;
+	animation-fill-mode: both;
+}
+.portfolio__link:hover .portfolio__example__top{
+	animation: dropdown 0.5s;
+	animation-fill-mode: both;
+}
+.footer{
+	width: 100%;
+	background: #d45e5e;
+	margin-top: 125px;
+}
+.footer__aligner{
+	width: 1024px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.footer__leftside{
+	float: left;
+}
+.footer__name{
+	font-family: Cambria;
+	font-size: 25px;
+	color: #ffffff;
+}
+.footer__location__image{
+	margin-right: 5px;
+}
+.footer__location{
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Myriad Pro";
+	padding-top: 20px;
+}
+.footer__about{
+	width: 560px;
+}
+.footer__about__text{
+	color: #ffffff;
+	font-size: 15px;
+	font-family: "Myriad Pro";
+	margin-top: 20px;
+}
+.footer__skills{
+	float: right;
+	padding-right: 10px;
+}
+.footer__skills__header{
+	font-family: Cambria;
+	font-size: 25px;
+	color: #ffffff;
+}
+.skillBar{
+	height: 15px;
+	background: rgba(255,255,255,0.3);
+	width: 200px;
+	float: right;
+	margin-left: 5px;
+}
+.footer__skills__p{
+	float: left;
+}
+.footer__skills_skill__level{
+	width: 90%;
+	height: 15px;
+	background: #282828;
+}
+.footer__skills__skill{
+	margin-top: 10px;
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.bar2{
+	width: 71%;
+}
+.bar3{
+	width: 83%;
+}
+.bar4{
+	width: 56%;
+}
+.clear{
+	clear: both;
+}
+.header__clear{
+	display: none;
+}
+.empty{
+	font-size: 30px;
+	font-family: Arial;
+	color: #000;
+	text-align: center;
+}
+@font-face{
+	font-family: Bebas;
+	src: url(../fonts/BebasNeue.ttf);
+}
+@font-face{
+	font-family: Helvetica;
+	src: url(../fonts/Helvetica.ttf);
+}
+@media (min-width: 1023px){
+	.aligner{
+		width: 1024px;
+	}
+} 
+@media (max-width: 1023px) {
+	.currentPage{
+		background: #d45e5e !important;
+	}
+	.aligner{
+		
+	}
+	.footer{
+		width: 100%;
+	}
+	.currentPage a{
+		color: #ffffff !important;
+	}
+	.footer{
+		
+	}
+	.footer__aligner{
+		width: 90%;
+	}
+	.footer__about{
+		width: 100%;
+	}
+	.footer__leftside{
+		float: none;
+		padding-bottom: 20px;
+	}
+	.footer__skills{
+		float: left;
+	}
+	.quote_block{
+		width: 100%;
+	}
+	.portfolio__example{
+		overflow: none;
+	}
+	.portfolio__example__top{
+		opacity: 1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 90%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 5%;
+		padding-right: 5%;
+		color: #0f03fa;
+		font-family: Arial;
+		background: rgba(255,255,255,0.5);
+	}
+	.header__links div{
+		padding: 10px;
+	}
+	.portfolio__example__bottom{
+		opacity: 1;
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 90%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 5%;
+		padding-right: 5%;
+		color: #0f03fa;
+		font-family: Arial;
+		background: rgba(255,255,255,0.5);
+		
+	}
+	.header__logo{
+		float: none;
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+	.header__clear{
+		display: block;
+		background: #d0d0d0;
+		width: 100%;
+		height: 1px;
+	}
+	.header__links{
+		float: none;
+		margin-left: 60px;
+		margin-top: 15px;
+	}
+	.quote{
+		margin-top: 95px;
+	}
+	.portfolio__link:hover .portfolio__example__bottom{
+		animation: none;
+	}
+	.portfolio__link:hover .portfolio__example__top{
+		animation: none;
+	}
+	.header__links div:hover{
+		transition: 2s;
+		background: #ffffff;
+	}
+	.header__links div:hover .header__link{
+		transition: 2s;
+		color: #000000;
+	}
+}
+@keyframes dropdown{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		top:0;
+		opacity: 1;
+	}
+}
+@keyframes dropup{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		bottom: 0;
+		opacity: 1;
+	}
+}

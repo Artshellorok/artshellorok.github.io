@@ -1,0 +1,335 @@
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+p{
+	margin: 0;
+}
+a{
+	margin: 0;
+}
+.clear{
+	clear: both;
+}
+.header{
+	max-width: 100%;
+	width: 1024px;
+	margin: 0 auto;
+}
+.navbar{
+	position: fixed;
+	width: 55%;
+	padding: 5%;
+	left: -65%;
+	background: #fff;
+	height: 95%;
+	top: 0;
+	z-index: 1;
+	transition: 2s;
+}
+.navbar__linkContainer{
+	width: 100%;
+}
+.menu{
+	display: none;
+	float: right;
+}
+.header__logo{
+	margin-left: 25px;
+	margin-top: 25px;
+}
+.header__links{
+	float: right;
+	margin-top: 50px;
+}
+.header__links__link{
+	float: left;
+	margin-right: 25px;
+}
+.header__links__link__a{
+	text-decoration: none;
+	font-size: 21px;
+	font-family: "Myriad Pro";
+	color: #000;
+}
+.header__links__link__underline{
+	opacity: 0;
+	width: 100%;
+	height: 3px;
+	background: #5094f2;
+	margin-top: 20px;
+	margin-left: 2px;
+}
+.navbar__line{
+	margin-top: 5px;
+	opacity: 1;
+}
+.navbar__Container{
+	width: 100%;
+}
+.navbar__link{
+	font-size: 7vw;
+}
+.header__links__link:hover .header__links__link__underline{
+	opacity: 1;
+	transition: 1s;
+}
+.slider{
+	width: 100%;
+	height: 480px;
+	background: url("../images/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom: 70px;
+}
+.slider__aligner{
+	max-width: 100%;
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider__slides{
+	width: 9000px;
+}
+.slider__aligner__slide__image{
+	float: left;
+	margin-left: 64px;
+	margin-top: 35px;
+}
+.slider__aligner__description{
+	padding-top: 150px;
+	margin-left: 505px;
+}
+.slider__aligner__slide__header{
+	font-size: 42px;
+	color: #fff;
+	font-family: "Segoe UI";
+	margin-bottom: 20px;
+}
+.slider__aligner__slide__text{
+	font-size: 27px;
+	color: #fff;
+	font-family: "Segoe UI";
+	margin-bottom: 10px;
+}
+.slider__aligner__slide__button{
+	background: #5094f2;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 155px;
+	border-radius: 5px;
+}
+.slider__aligner__slide__button__image{
+	float: left;
+	margin-right: 10px;
+}
+.slider__aligner__slide__button__text{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Myriad Pro";
+	font-size: 22px;
+}
+.slider__rightarrow{
+	position: absolute;
+	top: 50%;
+	left: 990px;
+}
+.slider__leftarrow{
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+.slider__rightarrow:hover{
+	cursor: pointer;
+}
+.slider__leftarrow:hover{
+	cursor: pointer;
+}
+.main{
+	max-width: 100%;
+	width: 1024px;
+	margin: 0 auto;
+}
+.main__block{
+	float: left;
+	width: 280px;
+	text-align: center;
+	margin-right: 60px;
+}
+.main__block__image{
+	margin-bottom: 20px;
+}
+.main__block__header{
+	color: #5094f2;
+	font-family: "Myriad Pro";
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.main__block__description{
+	color: #909090;
+	font-size: 14px;
+	font-family: "Myriad Pro";
+}
+.main__shoppingCart{
+	margin-top: 95px;
+	margin-left: 50px;
+	float: left;
+}
+.main__shoppingCart__header{
+	font-size: 43px;
+	font-family: "Segoe UI";
+	color: #6f7173;
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+.main__text{
+	float: left;
+	margin-top: 150px;
+	margin-left: 105px;
+}
+.main__text__header{
+	font-size: 26px;
+	font-family: "Segoe UI";
+	color: #6f7173;
+	margin-bottom: 25px;
+}
+.main__text__text{
+	font-size: 16px;
+	color: #979797;
+	font-family: "Segoe UI";
+	line-height: 2;
+}
+.text-container{
+	width: 100%;
+}
+.line{
+	height: 1px;
+	width: 100%;
+	background: #e5e5e5;
+	margin-bottom: 35px;
+}
+.clearMargin{
+	margin-bottom: 70px;
+}
+.footer{
+	max-width: 100%;
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Myriad Pro";
+	font-size: 15px;
+	color: #909090;
+	margin-bottom: 20px;
+}
+.mobileImage{
+	display: none;
+}
+.main__block__image_mobile{
+	display: none;
+}
+@media (max-width: 1023px) {
+	.header{
+	}
+	
+	.header__links{
+		display: none;
+	}
+	.menu{
+		display: block;
+		margin-top: 25px;
+		margin-right: 25px;
+	}
+	.header__logo{
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+	.slider__rightarrow{
+		display: none;
+	}
+	.slider__leftarrow{
+		display: none;
+	}
+	.mobileImage{
+		display: block;
+	}
+	.notMobile{
+		display: none;
+	}
+	.slider__aligner__description{
+		margin: 0;
+		padding: 0;
+		float: left;
+		margin-left: 15%;
+		margin-top: 25px;
+	}
+	.slider__aligner__slide__header{
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+	.slider__aligner__slide__text{
+		font-size: 22px;
+		margin-bottom: 0px;
+	}
+	.slider__aligner__slide__button{
+		float: left;
+	}
+	.slider{
+		background: url("../images/background_mobile.png");
+		background-size: cover;
+		height: auto;
+	}
+	.slider__aligner__slide__image{
+		margin-left: 10%;
+		margin-top: 0;
+	}
+	.main__block{
+		width: 100%;
+		text-align: left;
+	}
+	.main__block__header{
+		margin-top: 50px;
+		margin-left: 150px;
+		font-size: 20px;
+	}
+	.main__block__description{
+		margin-left: 150px;
+		font-size: 18px;
+	}
+	.main__block__image{
+		display: none;
+	}
+	.main__block__image_mobile{
+		display: block;
+	}
+	.main__shoppingCart{
+		text-align: center;
+	}
+	.main__shoppingCart__header{
+		font-size: 42px;
+	}
+	.main__shoppingCart{
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+	}
+	.main__block__image{
+		float: left;
+	}
+	.main__text{
+		margin-top: 100px;
+		margin-left: 45px;
+	}
+}
+@media (min-width: 1023px){
+	.text-container{
+		width: 435px;
+	}
+} 

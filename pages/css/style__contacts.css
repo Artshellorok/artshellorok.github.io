@@ -1,0 +1,61 @@
+body,html{
+	margin: 0;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+}
+.portfolio__inner{
+	margin-left: 5px;
+}
+.portfolio__inner__contacts{
+}
+.portfolio__inner__contacts__contact{
+	margin-bottom: 20px;
+}
+.contact__logo{
+	float: left;
+}
+.contact__contact{
+	font-size: 20px;
+	font-family: Arial;
+	color: #000;
+	padding-top: 5px;
+	margin-left: 42px;
+}
+.portfolio__inner__form{
+	margin-top: 50px;
+}
+.form__textarea{
+	width: 300px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.form__number{
+	font-weight: lighter;
+	font-family: Arial;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+.input_text{
+	height: 15px;
+	background: white;
+	border: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 3px;
+	margin-left: 5px;
+}
+.form__send{
+	display: block;
+	margin-top: 20px;
+	background: #f00;
+	border: none;
+	color: #fff;
+	width: 85px;
+	height: 40px;
+	border-radius: 5px;
+}
+.form__send:hover{
+	cursor: pointer;
+	box-shadow: 0 0 20px rgba(230,91,91,0.9);
+	transition: 0.5s;
+}
