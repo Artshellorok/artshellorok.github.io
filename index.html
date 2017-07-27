@@ -146,12 +146,13 @@
 	$("#form").on('submit', (function (e) {
                 e.preventDefault();
                 $.ajax({
+		    crossDomain: true,
                     url: "https://ftl2015b.ru/portfolio/get_projects.php",
                     type: "POST",
                     contentType: false, 
-		    data: "",
                     cache: false, 
                     processData: false,
+		    context: document.body,
                     success: function (data)
                         {
                             console.log(data);
