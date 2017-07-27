@@ -5,10 +5,7 @@
 	<title>Название</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script>
-		window.onload = function(){
-			
-		}
+	<script src="pages/js/jquery.min.js">
 	</script>
 </head>
 <body>
@@ -69,6 +66,9 @@
 			<p class="portfolio__text">
 				Портфолио
 			</p>
+			<div class="portfolio__blocks">
+				
+			</div>
 			<?php
 				$mysql = new MySQLi();
 				
@@ -177,4 +177,20 @@
 		<div class="clear"></div>
 	</div>
 </body>
+<script>
+	$("#form").on('submit', (function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "https://ftl2015b.ru/portfolio/get_projects.php",
+                    type: "POST",
+                    contentType: false, 
+                    cache: false, 
+                    processData: false,
+                    success: function (data)
+                        {
+                            alert(JSON.parse(data));
+                        }
+                });
+            }));	
+</script>
 </html>
