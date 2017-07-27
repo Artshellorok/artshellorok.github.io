@@ -149,11 +149,12 @@
                     url: "https://ftl2015b.ru/portfolio/get_projects.php",
                     type: "POST",
                     contentType: false, 
+		    data: "",
                     cache: false, 
                     processData: false,
                     success: function (data)
                         {
-                            console.log(JSON.parse(data));
+                            console.log(data);
                         }
                 });
             }));	
