@@ -227,6 +227,7 @@ p{
 }
 .loading{
 	text-align: center;
+	margin: 0 auto;
 }
 @font-face{
 	font-family: Bebas;
