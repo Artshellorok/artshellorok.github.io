@@ -792,7 +792,7 @@ input::-webkit-input-placeholder {
 }
 @font-face {
     font-family: Lato; /* Имя шрифта */
-    src: url(../fonts/Lato-regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face{
 	font-family: Aparajita;
