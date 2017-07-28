@@ -153,7 +153,7 @@
 		    context: document.body,
                     success: function (data)
                         {
-                            document.querySelector(".portfolio__blocks").append(data);
+                            document.querySelector(".portfolio__blocks").innerHTML = data;
                         }
                 });	
 </script>
