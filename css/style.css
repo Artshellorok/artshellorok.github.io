@@ -225,6 +225,9 @@ p{
 	color: #000;
 	text-align: center;
 }
+.loading{
+	text-align: center;
+}
 @font-face{
 	font-family: Bebas;
 	src: url(../fonts/BebasNeue.ttf);
