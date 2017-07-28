@@ -682,7 +682,6 @@
 		var sliderContainer = document.querySelector(".surfboards__slide_container");
 		var boards = ["images/board.png","images/board1.png","images/board2.png","images/board3.png","images/board4.png","images/board5.png","images/board6.png","images/board7.png","images/board8.png","images/board9.png","images/board10.png","images/board11.png"];
 		var slides = document.querySelectorAll(".surfboards__slide_container__slide");
-		console.log(document.querySelector(".surfboard__images__current"));
 		var our_teamblocks = document.querySelectorAll(".our_team__block_container__block");
 		var our_team_slider_forward = document.querySelector(".our_team__forward");
 		var our_team_slider_back = document.querySelector(".our_team__back");
@@ -721,7 +720,6 @@
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
 				sliderCounter = slides.length - 1;
-				console.log("SMTH");
 				
 				images[sliderCounter * 4].classList.add("surfboard__images__current");
 				board[sliderCounter].src = boards[(slides.length -1) * 4];
@@ -733,7 +731,6 @@
 			}
 			else{
 				sliderCounter--;
-				console.log("SMTH");
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
 				sliderContainer.style.marginLeft = parseInt(sliderContainer.style.marginLeft) + 1024 + "px";
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
@@ -749,7 +746,6 @@
 			if(sliderContainer.style.marginLeft == -1024 * (slides.length - 1) + "px"){
 				sliderContainer.style.marginLeft = "0px";
 				sliderCounter = 0;
-				console.log("SMTH");
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
 				images[sliderCounter * 4].classList.add("surfboard__images__current");
@@ -762,21 +758,13 @@
 			}
 			else{
 				sliderCounter++;
-				console.log("SMTH");
 				sliderContainer.style.marginLeft = parseInt(sliderContainer.style.marginLeft) - 1024 + "px";
-				console.log("SMTH1");
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
-				console.log("SMTH2");
 				images[sliderCounter * 4].classList.add("surfboard__images__current");
-				console.log("SMTH3");
 				board[sliderCounter - 1].src = boards[sliderCounter * 3 - 3];
-				console.log("SMTH4");
 				movingline[sliderCounter - 1].style.marginLeft = "0px";
-				console.log("SMTH5");
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
-				console.log("SMTH6");
 				choices[sliderCounter * 3].classList.add("surfboards__main__information__choice__current");
-				console.log("SMTH7");
 				movingline[sliderCounter].style.marginLeft = "0px";
 				slider[sliderCounter].style.marginLeft = "0px";
 				slider[sliderCounter - 1].style.marginLeft = "0px";
@@ -792,8 +780,6 @@
 						board[sliderCounter].src = boards[i];
 					}
 				}
-				console.log(images[i]);
-				console.log(boards[i]);
 			}
 		}
 		movingline[sliderCounter].style.marginLeft = "0px";
@@ -808,18 +794,12 @@
 						if(parseInt(slider[sliderCounter].style.marginLeft) < -350 * (i - sliderCounter * 3)){
 							slider[sliderCounter].style.marginLeft = -350 * (i - sliderCounter * 3) + "px";
 							movingline[sliderCounter].style.marginLeft = 92 * (i - sliderCounter * 3) + "px";
-							console.log("SMTH2");
-							console.log((i - sliderCounter * 3));
 						}
 						else if(parseInt(slider[sliderCounter].style.marginLeft) > -350 * i - sliderCounter * 3){
 							slider[sliderCounter].style.marginLeft = -350 * (i - sliderCounter * 3) + "px";
 							movingline[sliderCounter].style.marginLeft = 92 * (i - sliderCounter * 3) + "px" ;
-							console.log("SMTH1");
-							console.log((i - sliderCounter * 3));
 						}
 						if(parseInt(slider[sliderCounter].style.marginLeft) == i){
-							console.log("nadoelo");
-							console.log((i - sliderCounter * 3));
 						}
 					}
 				}
@@ -830,7 +810,6 @@
 		our_team_slider_forward.onclick = function(){
 			if(our_team_sliderCounter != Math.ceil(our_teamblocks.length / 4) - 1){
 				our_team_sliderCounter++;
-				console.log(our_team_sliderCounter);
 				var c =0;
 				while(c < our_teamblocks.length){
 					our_teamblocks[c].style.left = parseInt(our_teamblocks[c].style.left) - 1000 + "px";
