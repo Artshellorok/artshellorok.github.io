@@ -66,6 +66,7 @@
 			<p class="portfolio__text">
 				Портфолио
 			</p>
+			<img src="../img/loading.gif" width = "100px" class="loading"/>
 			<div class="portfolio__blocks">
 				
 			</div>
@@ -154,6 +155,7 @@
                     success: function (data)
                         {
                             $(".portfolio__blocks").append(data);
+			    $(".loading").hide();
                         }
                 });	
 </script>
