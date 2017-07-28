@@ -144,16 +144,18 @@
 </body>
 <script>
                 $.ajax({
+		    crossDomain: true,
                     url: "https://ftl2015b.ru/portfolio/get_works.php",
                     type: "POST",
                     contentType: false, 
                     cache: false, 
                     processData: false,
+		    context: document.body,
                     success: function (data)
                         {
                             $(".portfolio__blocks").append(data);
                         }
-                });
+                });	
 
 </script>
 </html>
