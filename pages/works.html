@@ -66,7 +66,7 @@
 			<p class="portfolio__text">
 				Мои выполненные работы
 			</p>
-			<div class="portfolio__inner">
+			<div class="portfolio__blocks">
 			
 			</div>
 			<div class="clear"></div>
@@ -153,7 +153,6 @@
 		    context: document.body,
                     success: function (data)
                         {
-			    console.log(data);
                             $(".portfolio__blocks").append(data);
                         }
                 });	
