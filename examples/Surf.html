@@ -806,8 +806,15 @@
 				
 			}
 		}
+		our_team_slider_back.style.display = "none";
 		var our_team_sliderCounter = 0;
 		our_team_slider_forward.onclick = function(){
+			if(our_team_sliderCounter == Math.ceil(our_teamblocks.length / 4) - 1){
+				our_team_slider_forward.style.display = "none";
+			}
+			else{
+				our_team_slider_forward.style.display = "block";
+			}
 			if(our_team_sliderCounter != Math.ceil(our_teamblocks.length / 4) - 1){
 				our_team_sliderCounter++;
 				var c =0;
@@ -818,6 +825,12 @@
 			}
 		}
 		our_team_slider_back.onclick = function(){
+			if(our_team_sliderCounter == 0){
+				our_team_slider_back.style.display = "none";
+			}
+			else{
+				our_team_slider_back.style.display = "block";
+			}
 			if(our_team_sliderCounter != 0){
 				our_team_sliderCounter--;
 				console.log(our_team_sliderCounter);
