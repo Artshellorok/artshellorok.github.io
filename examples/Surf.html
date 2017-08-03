@@ -714,6 +714,7 @@
 			
 		}
 		sliderContainer.style.marginLeft = "0px";
+		surfboards__counter.innerHTML = "1/" + Math.ceil(our_teamblocks.length / 4 + 1);
 		sliderBack.onclick = function(){
 			if(sliderContainer.style.marginLeft == "0px"){
 				sliderContainer.style.marginLeft = -1024 * (slides.length - 1) + "px";
@@ -809,7 +810,6 @@
 			}
 		}
 		var surfboards__counter = document.querySelector(".surfboards__counter__p");
-		surfboards__counter.innerHTML = "1/" + Math.ceil(our_teamblocks.length / 4 + 1);
 		our_team_slider_back.style.display = "none";
 		var our_team_sliderCounter = 0;
 		our_team_slider_forward.onclick = function(){
