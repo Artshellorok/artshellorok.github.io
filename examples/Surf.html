@@ -685,6 +685,7 @@
 		var our_teamblocks = document.querySelectorAll(".our_team__block_container__block");
 		var our_team_slider_forward = document.querySelector(".our_team__forward");
 		var our_team_slider_back = document.querySelector(".our_team__back");
+		var surfboards__counter = document.querySelector(".surfboards__counter__p");
 		for(var i =0; i < our_teamblocks.length;i++){
 			our_teamblocks[i].style.left = "0px";
 		}
@@ -809,7 +810,6 @@
 				
 			}
 		}
-		var surfboards__counter = document.querySelector(".surfboards__counter__p");
 		our_team_slider_back.style.display = "none";
 		var our_team_sliderCounter = 0;
 		our_team_slider_forward.onclick = function(){
