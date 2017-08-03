@@ -820,13 +820,14 @@
 			}
 			if(our_team_sliderCounter != Math.ceil(our_teamblocks.length / 4) - 1){
 				our_team_sliderCounter++;
+				surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
 				var c =0;
 				while(c < our_teamblocks.length){
 					our_teamblocks[c].style.left = parseInt(our_teamblocks[c].style.left) - 1000 + "px";
 					c++;
 				}
 			}
-			surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
+			
 		}
 		our_team_slider_back.onclick = function(){
 			
@@ -839,13 +840,14 @@
 			if(our_team_sliderCounter != 0){
 				our_team_sliderCounter--;
 				console.log(our_team_sliderCounter);
+				surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 - 1);
 				var c =0;
 				while(c < our_teamblocks.length){
 					our_teamblocks[c].style.left = parseInt(our_teamblocks[c].style.left) + 1000 + "px";
 					c++;
 				}
 			}
-			surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 - 1);
+			
 		}
 			
 	</script>
