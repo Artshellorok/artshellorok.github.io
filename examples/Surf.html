@@ -720,7 +720,7 @@
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
 				sliderCounter = slides.length - 1;
-				
+				surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
 				images[sliderCounter * 4].classList.add("surfboard__images__current");
 				board[sliderCounter].src = boards[(slides.length -1) * 4];
 				movingline[sliderCounter].style.marginLeft = "0px";
@@ -739,7 +739,9 @@
 				movingline[sliderCounter + 1].style.marginLeft = "0px";
 				choices[3 * sliderCounter].classList.add("surfboards__main__information__choice__current");
 				slider[sliderCounter + 1].style.marginLeft = "0px";
+				
 			}
+			surfboards__counter.innerHTML = sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
 			
 		}
 		sliderForward.onclick = function(){
@@ -753,7 +755,6 @@
 				movingline[slides.length -1].style.marginLeft = "0px";
 				choices[sliderCounter].style.marginLeft = "0px";
 				choices[0].classList.add("surfboards__main__information__choice__current");
-				
 				slider[slides.length - 1].style.marginLeft = "0px";
 			}
 			else{
@@ -769,6 +770,7 @@
 				slider[sliderCounter].style.marginLeft = "0px";
 				slider[sliderCounter - 1].style.marginLeft = "0px";
 			}
+			surfboards__counter.innerHTML = sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
 		}
 		for(var i=0; i< images.length; i++){
 			images[i].onclick = function(){
@@ -820,7 +822,7 @@
 			}
 			if(our_team_sliderCounter != Math.ceil(our_teamblocks.length / 4) - 1){
 				our_team_sliderCounter++;
-				surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
+				
 				var c =0;
 				while(c < our_teamblocks.length){
 					our_teamblocks[c].style.left = parseInt(our_teamblocks[c].style.left) - 1000 + "px";
