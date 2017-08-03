@@ -2,5 +2,5 @@ var quotes = ["Креативность означает позволить се
 var authors =["-Генри Адамс"];
 
 var randomNum = Math.floor(Math.random() * quotes.length);
-var author = author[randomNum];
+var author = authors[randomNum];
 var quote = quotes[randomNum];
