@@ -722,7 +722,6 @@
 				document.querySelector(".surfboards__main__information__choice__current").classList.remove("surfboards__main__information__choice__current");
 				document.querySelector(".surfboard__images__current").classList.remove("surfboard__images__current");
 				sliderCounter = slides.length - 1;
-				surfboards__counter.innerHTML = our_team_sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4);
 				images[sliderCounter * 4].classList.add("surfboard__images__current");
 				board[sliderCounter].src = boards[(slides.length -1) * 4];
 				movingline[sliderCounter].style.marginLeft = "0px";
@@ -743,7 +742,7 @@
 				slider[sliderCounter + 1].style.marginLeft = "0px";
 				
 			}
-			surfboards__counter.innerHTML = sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4 + 1);
+			surfboards__counter.innerHTML = sliderCounter + 1 + "/" + Math.ceil(our_teamblocks.length / 4);
 			
 		}
 		sliderForward.onclick = function(){
