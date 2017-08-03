@@ -346,6 +346,7 @@ p{
 @keyframes dropdown{
 	0%{
 		opacity: 0;
+		top: -300px
 	}
 	100%{
 		top:0;
@@ -355,6 +356,7 @@ p{
 @keyframes dropup{
 	0%{
 		opacity: 0;
+		bottom: -300px
 	}
 	100%{
 		bottom: 0;
