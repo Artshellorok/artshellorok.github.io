@@ -96,7 +96,6 @@ p{
 	margin-bottom: 10px;
 }
 .portfolio__example__top{
-	opacity: 0;
 	position: absolute;
 	left: 0;
 	top: -300px;
@@ -111,7 +110,6 @@ p{
 	top: -300px;
 }
 .portfolio__example__bottom{
-	opacity: 0;
 	position: absolute;
 	bottom: -300px;
 	left: 0;
