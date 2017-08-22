@@ -92,6 +92,8 @@ p{
 	overflow: hidden;
 	width: 280px;
 	height: 390px;
+	margin-right: 15px;
+	margin-bottom: 10px;
 }
 .portfolio__example__top{
 	opacity: 0;
