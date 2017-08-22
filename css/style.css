@@ -128,11 +128,11 @@ p{
 }
 .portfoilio__example:hover .portfolio__example__bottom{
 	bottom: 0;
-	transition: 1s;
+	transition: 0.5s;
 }
 .portfoilio__example:hover .portfolio__example__top{
 	top: 0;
-	transition: 1s;
+	transition: 0.5s;
 }
 .footer{
 	width: 100%;
