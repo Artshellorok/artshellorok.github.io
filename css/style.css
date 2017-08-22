@@ -127,12 +127,12 @@ p{
 	
 }
 .portfolio__example:hover .portfolio__example__bottom{
-	bottom: 0px;
-	transition: 0.5s;
+	bottom: 0;
+	transition: 1s;
 }
 .portfolio__example:hover .portfolio__example__top{
-	top: 0px;
-	transition: 0.5s
+	top: 0;
+	transition: 1s;
 }
 .footer{
 	width: 100%;
