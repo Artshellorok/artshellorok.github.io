@@ -85,6 +85,7 @@ p{
 }
 
 .portfoilio__example{
+	float: left;
 	position: relative;
 	background: #a3a3a3;
 	border: solid #c0c0c0 5px;
@@ -121,18 +122,13 @@ p{
 	background: rgba(255,255,255,0.5);
 }
 .portfolio__link{
-	display: block;
-	float: left;
-	margin-left: 25px;
-	margin-bottom: 25px;
-	height: 390px;
-	width: 280px;
+	
 }
-.portfolio__link:hover .portfolio__example__bottom{
+.portfolio__example:hover .portfolio__example__bottom{
 	animation: dropup 0.5s;
 	animation-fill-mode: both;
 }
-.portfolio__link:hover .portfolio__example__top{
+.portfolio__example:hover .portfolio__example__top{
 	animation: dropdown 0.5s;
 	animation-fill-mode: both;
 }
