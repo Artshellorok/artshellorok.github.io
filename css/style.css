@@ -84,7 +84,7 @@ p{
 	margin-bottom: 20px;
 }
 
-.portfolio__example{
+.portfoilio__example{
 	float: left;
 	position: relative;
 	background: #a3a3a3;
@@ -126,11 +126,11 @@ p{
 .portfolio__link{
 	
 }
-.portfolio__example:hover .portfolio__example__bottom{
+.portfoilio__example:hover .portfolio__example__bottom{
 	bottom: 0;
 	transition: 1s;
 }
-.portfolio__example:hover .portfolio__example__top{
+.portfoilio__example:hover .portfolio__example__top{
 	top: 0;
 	transition: 1s;
 }
