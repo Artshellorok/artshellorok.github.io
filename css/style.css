@@ -28,7 +28,7 @@ p{
 .header__links{
 	float: right;
 }
-.header__links div{
+.header__links__div{
 	background: #ffffff;
 	float: left;
 	margin-right: 35px;
